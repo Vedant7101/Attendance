@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:id="@+id/linearLayout"
+            android:scrollbars="vertical"
+            android:gravity="center"
+            android:layout_margin="30dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:background="@drawable/subject_button"
+                android:padding="30dp">
+
+                <Spinner
+                    android:layout_marginBottom="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:id="@+id/edit1"/>
+
+                <Spinner
+                    android:layout_marginBottom="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dp"
+                    android:background="@drawable/edittext"
+                    android:id="@+id/edit2"/>
+
+                <EditText
+                    android:layout_marginBottom="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint=" Start Time"
+                    android:textColorHint="#000"
+                    android:fontFamily="@font/abeezee"
+                    android:textColor="#000"
+                    android:textSize="17sp"
+                    android:background="@drawable/edittext"
+                    android:editable="false"
+                    android:id="@+id/edit3" />
+
+                <EditText
+                    android:layout_marginBottom="25dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint=" End Time"
+                    android:textColor="#000"
+                    android:textColorHint="#000"
+                    android:fontFamily="@font/abeezee"
+                    android:textSize="17sp"
+                    android:background="@drawable/edittext"
+                    android:editable="false"
+                    android:id="@+id/edit4" />
+
+                <Button
+                    android:layout_marginBottom="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/button1"
+                    android:text="Start Attendance"
+                    android:textColor="#000"
+                    android:textSize="17.5sp"
+                    android:padding="15dp"
+                    android:background="@drawable/mark_button"
+                    android:layout_gravity="center_horizontal"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
